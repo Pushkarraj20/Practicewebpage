@@ -1,0 +1,24 @@
+.main-header {
+  font-size: 2em;
+  color: #333;
+  text-align: center;
+  margin-top: 20px;
+  background-color: #ee1d1d61;
+}
+
+.secondary {
+  color: #555;
+  font-size: 1.5em;
+}
+
+.main-section {
+    padding: 20px;
+    background-color: hwb(0 27% 19%);
+    border: 1px solid #d37575;
+    border-radius: 5px;
+}
+
+span{
+    background-color: green;
+    font-weight: bold;
+}
