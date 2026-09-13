@@ -1,385 +1,742 @@
-```html
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>SuperMart | Online Grocery Store</title>
+    <title>FreshCart | Online Supermarket</title>
 
-    <!-- CSS File -->
     <link rel="stylesheet" href="super.css">
 
-    <!-- Google Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
-    <!-- ================= NAVBAR ================= -->
 
-    <header class="header">
-        <nav class="navbar">
+<!-- =====================================================
+     TOP BAR
+===================================================== -->
 
-            <div class="logo">
-                🛒 <span>Super</span>Mart
+<div class="top-bar">
+
+    <div class="container top-content">
+
+        <p>🚚 Free delivery on orders above ₹499</p>
+
+        <div class="top-links">
+            <a href="#">Help Center</a>
+            <a href="#">Track Order</a>
+            <a href="#">Offers</a>
+        </div>
+
+    </div>
+
+</div>
+
+
+<!-- =====================================================
+     HEADER
+===================================================== -->
+
+<header>
+
+    <div class="container header-main">
+
+        <!-- Logo -->
+
+        <a href="#" class="logo">
+            <span class="logo-icon">🛒</span>
+            Fresh<span>Cart</span>
+        </a>
+
+
+        <!-- Location -->
+
+        <div class="location">
+
+            <span class="location-icon">📍</span>
+
+            <div>
+                <small>Deliver to</small>
+                <strong>Greater Noida</strong>
             </div>
 
-            <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#categories">Categories</a></li>
-                <li><a href="#products">Products</a></li>
-                <li><a href="#offers">Offers</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
+            <span>⌄</span>
 
-            <div class="nav-actions">
-                <span>🔍</span>
+        </div>
+
+
+        <!-- Search -->
+
+        <div class="search-box">
+
+            <input
+                type="text"
+                placeholder="Search for products, brands and more...">
+
+            <button>🔍</button>
+
+        </div>
+
+
+        <!-- Header Actions -->
+
+        <div class="header-actions">
+
+            <div class="header-action">
+                <span>♡</span>
+                <small>Wishlist</small>
+            </div>
+
+            <div class="header-action cart">
+
                 <span>🛒</span>
-                <span>👤</span>
+
+                <b>2</b>
+
+                <small>Cart</small>
+
             </div>
 
-        </nav>
-    </header>
+            <div class="header-action">
+                <span>👤</span>
+                <small>Account</small>
+            </div>
+
+        </div>
+
+    </div>
 
 
-    <!-- ================= HERO SECTION ================= -->
+    <!-- Navigation -->
 
-    <section class="hero" id="home">
+    <nav class="navigation">
+
+        <div class="container nav-inner">
+
+            <a href="#" class="all-category">
+                ☰ &nbsp; All Categories
+            </a>
+
+            <a href="#home">Home</a>
+            <a href="#categories">Fresh Produce</a>
+            <a href="#products">Groceries</a>
+            <a href="#deals">Deals</a>
+            <a href="#">Beverages</a>
+            <a href="#">Snacks</a>
+            <a href="#">Personal Care</a>
+
+        </div>
+
+    </nav>
+
+</header>
+
+
+<!-- =====================================================
+     HERO
+===================================================== -->
+
+<main id="home">
+
+<section class="hero">
+
+    <div class="container hero-grid">
+
 
         <div class="hero-content">
 
-            <p class="hero-label">WELCOME TO SUPERMART</p>
+            <span class="hero-badge">
+                🔥 WEEKEND SPECIAL
+            </span>
 
             <h1>
-                Fresh Products.
-                <span>Better Prices.</span>
+                Fresh groceries.
+                <span>Delivered to you.</span>
             </h1>
 
-            <p class="hero-description">
-                Shop fresh groceries, fruits, vegetables and daily
-                essentials at the best prices.
+            <p>
+                Shop fresh fruits, vegetables, dairy, groceries
+                and everyday essentials at amazing prices.
             </p>
 
+
             <div class="hero-buttons">
-                <a href="#products" class="btn">Shop Now →</a>
-                <a href="#categories" class="btn-outline">
+
+                <a href="#products" class="primary-btn">
+                    Shop Now →
+                </a>
+
+                <a href="#categories" class="secondary-btn">
                     Explore Categories
                 </a>
+
+            </div>
+
+
+            <div class="hero-trust">
+
+                <div>
+                    <strong>10K+</strong>
+                    <span>Happy Customers</span>
+                </div>
+
+                <div>
+                    <strong>500+</strong>
+                    <span>Products</span>
+                </div>
+
+                <div>
+                    <strong>30 min</strong>
+                    <span>Fast Delivery</span>
+                </div>
+
             </div>
 
         </div>
 
 
-        <div class="hero-visual">
+        <!-- Hero Product Display -->
+
+        <div class="hero-product">
 
             <div class="hero-circle"></div>
 
-            <div class="shopping-basket">
+            <span class="floating fruit-one">🍎</span>
+            <span class="floating fruit-two">🥑</span>
+            <span class="floating fruit-three">🥕</span>
+            <span class="floating fruit-four">🍊</span>
+
+            <div class="hero-basket">
                 🛒
             </div>
 
-            <div class="floating-item apple">
-                🍎
-            </div>
 
-            <div class="floating-item orange">
-                🍊
-            </div>
+            <div class="discount-bubble">
 
-            <div class="floating-item broccoli">
-                🥦
-            </div>
+                <strong>50%</strong>
+                <span>OFF</span>
 
-            <div class="floating-item carrot">
-                🥕
             </div>
 
         </div>
 
-    </section>
+    </div>
+
+</section>
 
 
-    <!-- ================= FEATURES ================= -->
+<!-- =====================================================
+     FEATURES
+===================================================== -->
 
-    <section class="features">
+<section class="features">
 
-        <div class="feature-card">
-            <div class="feature-icon">🚚</div>
+    <div class="container features-grid">
+
+        <div class="feature">
+
+            <div class="feature-icon">
+                🚚
+            </div>
 
             <div>
-                <h3>Free Delivery</h3>
-                <p>On orders above ₹499</p>
+                <strong>Fast Delivery</strong>
+                <p>Delivered within 30 minutes</p>
             </div>
+
         </div>
 
 
-        <div class="feature-card">
-            <div class="feature-icon">🥬</div>
+        <div class="feature">
+
+            <div class="feature-icon">
+                🥬
+            </div>
 
             <div>
-                <h3>Fresh Products</h3>
-                <p>100% fresh & quality</p>
+                <strong>100% Fresh</strong>
+                <p>Freshness guaranteed</p>
             </div>
+
         </div>
 
 
-        <div class="feature-card">
-            <div class="feature-icon">🔒</div>
+        <div class="feature">
+
+            <div class="feature-icon">
+                💳
+            </div>
 
             <div>
-                <h3>Secure Payment</h3>
-                <p>Safe & secure checkout</p>
+                <strong>Secure Payment</strong>
+                <p>100% secure checkout</p>
             </div>
+
         </div>
 
 
-        <div class="feature-card">
-            <div class="feature-icon">📞</div>
+        <div class="feature">
+
+            <div class="feature-icon">
+                ↩️
+            </div>
 
             <div>
-                <h3>24/7 Support</h3>
-                <p>We're here to help</p>
-            </div>
-        </div>
-
-    </section>
-
-
-    <!-- ================= CATEGORIES ================= -->
-
-    <section class="section" id="categories">
-
-        <div class="section-heading">
-            <p>SHOP BY CATEGORY</p>
-            <h2>Explore Our Categories</h2>
-        </div>
-
-
-        <div class="categories">
-
-            <div class="category-card">
-                <div class="category-image">🍎</div>
-                <h3>Fresh Fruits</h3>
-                <p>50+ Products</p>
-            </div>
-
-
-            <div class="category-card">
-                <div class="category-image">🥦</div>
-                <h3>Vegetables</h3>
-                <p>80+ Products</p>
-            </div>
-
-
-            <div class="category-card">
-                <div class="category-image">🥛</div>
-                <h3>Dairy</h3>
-                <p>40+ Products</p>
-            </div>
-
-
-            <div class="category-card">
-                <div class="category-image">🍪</div>
-                <h3>Snacks</h3>
-                <p>100+ Products</p>
-            </div>
-
-
-            <div class="category-card">
-                <div class="category-image">🍚</div>
-                <h3>Grocery</h3>
-                <p>120+ Products</p>
-            </div>
-
-
-            <div class="category-card">
-                <div class="category-image">🧴</div>
-                <h3>Personal Care</h3>
-                <p>70+ Products</p>
+                <strong>Easy Returns</strong>
+                <p>Simple return policy</p>
             </div>
 
         </div>
 
-    </section>
+    </div>
+
+</section>
 
 
-    <!-- ================= PRODUCTS ================= -->
+<!-- =====================================================
+     CATEGORIES
+===================================================== -->
 
-    <section class="section products-section" id="products">
+<section class="section" id="categories">
 
-        <div class="section-heading">
-            <p>OUR PRODUCTS</p>
-            <h2>Popular Products</h2>
-        </div>
+    <div class="container">
 
+        <div class="section-header">
 
-        <div class="products">
-
-
-            <!-- Product 1 -->
-
-            <div class="product-card">
-
-                <span class="discount">20% OFF</span>
-
-                <div class="product-image">
-                    🍎
-                </div>
-
-                <p class="product-category">Fresh Fruits</p>
-
-                <h3>Fresh Red Apples</h3>
-
-                <div class="rating">
-                    ⭐⭐⭐⭐⭐
-                </div>
-
-                <div class="price">
-                    <strong>₹160</strong>
-                    <del>₹200</del>
-                </div>
-
-                <button>Add to Cart 🛒</button>
-
+            <div>
+                <span>SHOP BY CATEGORY</span>
+                <h2>What are you looking for?</h2>
             </div>
 
-
-            <!-- Product 2 -->
-
-            <div class="product-card">
-
-                <span class="discount">15% OFF</span>
-
-                <div class="product-image">
-                    🥦
-                </div>
-
-                <p class="product-category">Vegetables</p>
-
-                <h3>Fresh Broccoli</h3>
-
-                <div class="rating">
-                    ⭐⭐⭐⭐⭐
-                </div>
-
-                <div class="price">
-                    <strong>₹85</strong>
-                    <del>₹100</del>
-                </div>
-
-                <button>Add to Cart 🛒</button>
-
-            </div>
-
-
-            <!-- Product 3 -->
-
-            <div class="product-card">
-
-                <span class="discount">10% OFF</span>
-
-                <div class="product-image">
-                    🥛
-                </div>
-
-                <p class="product-category">Dairy</p>
-
-                <h3>Fresh Milk 1L</h3>
-
-                <div class="rating">
-                    ⭐⭐⭐⭐⭐
-                </div>
-
-                <div class="price">
-                    <strong>₹54</strong>
-                    <del>₹60</del>
-                </div>
-
-                <button>Add to Cart 🛒</button>
-
-            </div>
-
-
-            <!-- Product 4 -->
-
-            <div class="product-card">
-
-                <span class="discount">25% OFF</span>
-
-                <div class="product-image">
-                    🍪
-                </div>
-
-                <p class="product-category">Snacks</p>
-
-                <h3>Chocolate Cookies</h3>
-
-                <div class="rating">
-                    ⭐⭐⭐⭐☆
-                </div>
-
-                <div class="price">
-                    <strong>₹75</strong>
-                    <del>₹100</del>
-                </div>
-
-                <button>Add to Cart 🛒</button>
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <!-- ================= OFFER SECTION ================= -->
-
-    <section class="offer" id="offers">
-
-        <div class="offer-content">
-
-            <p class="offer-label">LIMITED TIME OFFER</p>
-
-            <h2>
-                Get Up To
-                <span>50% OFF</span>
-            </h2>
-
-            <h3>On Fresh Grocery Products</h3>
-
-            <p>
-                Grab amazing deals on your everyday essentials.
-                Offer available for a limited time.
-            </p>
-
-            <a href="#products" class="offer-button">
-                Shop Offers →
+            <a href="#" class="view-all">
+                View All →
             </a>
 
         </div>
 
 
-        <div class="offer-visual">
-            🛍️
+        <div class="category-grid">
+
+
+            <div class="category-card">
+
+                <div class="category-image fruit-bg">
+                    🍎
+                </div>
+
+                <h3>Fruits</h3>
+                <p>120+ items</p>
+
+            </div>
+
+
+            <div class="category-card">
+
+                <div class="category-image vegetable-bg">
+                    🥦
+                </div>
+
+                <h3>Vegetables</h3>
+                <p>150+ items</p>
+
+            </div>
+
+
+            <div class="category-card">
+
+                <div class="category-image dairy-bg">
+                    🥛
+                </div>
+
+                <h3>Dairy & Eggs</h3>
+                <p>80+ items</p>
+
+            </div>
+
+
+            <div class="category-card">
+
+                <div class="category-image grocery-bg">
+                    🍚
+                </div>
+
+                <h3>Staples</h3>
+                <p>200+ items</p>
+
+            </div>
+
+
+            <div class="category-card">
+
+                <div class="category-image snack-bg">
+                    🍪
+                </div>
+
+                <h3>Snacks</h3>
+                <p>180+ items</p>
+
+            </div>
+
+
+            <div class="category-card">
+
+                <div class="category-image beverage-bg">
+                    🥤
+                </div>
+
+                <h3>Beverages</h3>
+                <p>100+ items</p>
+
+            </div>
+
+
+            <div class="category-card">
+
+                <div class="category-image care-bg">
+                    🧴
+                </div>
+
+                <h3>Personal Care</h3>
+                <p>90+ items</p>
+
+            </div>
+
+
+            <div class="category-card">
+
+                <div class="category-image cleaning-bg">
+                    🧹
+                </div>
+
+                <h3>Home Care</h3>
+                <p>75+ items</p>
+
+            </div>
+
         </div>
 
-    </section>
+    </div>
+
+</section>
 
 
-    <!-- ================= NEWSLETTER ================= -->
+<!-- =====================================================
+     PRODUCTS
+===================================================== -->
 
-    <section class="newsletter">
+<section class="section products-section" id="products">
 
-        <h2>Stay Updated!</h2>
+    <div class="container">
 
-        <p>
-            Subscribe to get the latest offers and supermarket deals.
-        </p>
+        <div class="section-header">
 
-        <div class="subscribe-box">
+            <div>
+
+                <span>BEST SELLERS</span>
+
+                <h2>Popular Products</h2>
+
+            </div>
+
+            <a href="#" class="view-all">
+                View All →
+            </a>
+
+        </div>
+
+
+        <div class="product-grid">
+
+
+            <!-- Product 1 -->
+
+            <article class="product-card">
+
+                <div class="product-top">
+
+                    <span class="product-discount">
+                        -20%
+                    </span>
+
+                    <button class="wishlist">
+                        ♡
+                    </button>
+
+                </div>
+
+
+                <div class="product-image">
+                    🍎
+                </div>
+
+
+                <div class="product-info">
+
+                    <small>Fresh Fruits</small>
+
+                    <h3>Premium Red Apples</h3>
+
+                    <div class="rating">
+                        ⭐⭐⭐⭐⭐
+                        <span>(128)</span>
+                    </div>
+
+                    <div class="product-price">
+
+                        <strong>₹160</strong>
+
+                        <del>₹200</del>
+
+                    </div>
+
+                    <button class="cart-button">
+                        + Add to Cart
+                    </button>
+
+                </div>
+
+            </article>
+
+
+            <!-- Product 2 -->
+
+            <article class="product-card">
+
+                <div class="product-top">
+
+                    <span class="product-discount">
+                        -15%
+                    </span>
+
+                    <button class="wishlist">
+                        ♡
+                    </button>
+
+                </div>
+
+
+                <div class="product-image">
+                    🥦
+                </div>
+
+
+                <div class="product-info">
+
+                    <small>Vegetables</small>
+
+                    <h3>Fresh Green Broccoli</h3>
+
+                    <div class="rating">
+                        ⭐⭐⭐⭐⭐
+                        <span>(94)</span>
+                    </div>
+
+                    <div class="product-price">
+
+                        <strong>₹85</strong>
+
+                        <del>₹100</del>
+
+                    </div>
+
+                    <button class="cart-button">
+                        + Add to Cart
+                    </button>
+
+                </div>
+
+            </article>
+
+
+            <!-- Product 3 -->
+
+            <article class="product-card">
+
+                <div class="product-top">
+
+                    <span class="product-discount">
+                        -10%
+                    </span>
+
+                    <button class="wishlist">
+                        ♡
+                    </button>
+
+                </div>
+
+
+                <div class="product-image">
+                    🥛
+                </div>
+
+
+                <div class="product-info">
+
+                    <small>Dairy</small>
+
+                    <h3>Fresh Cow Milk 1L</h3>
+
+                    <div class="rating">
+                        ⭐⭐⭐⭐⭐
+                        <span>(210)</span>
+                    </div>
+
+                    <div class="product-price">
+
+                        <strong>₹54</strong>
+
+                        <del>₹60</del>
+
+                    </div>
+
+                    <button class="cart-button">
+                        + Add to Cart
+                    </button>
+
+                </div>
+
+            </article>
+
+
+            <!-- Product 4 -->
+
+            <article class="product-card">
+
+                <div class="product-top">
+
+                    <span class="product-discount">
+                        -25%
+                    </span>
+
+                    <button class="wishlist">
+                        ♡
+                    </button>
+
+                </div>
+
+
+                <div class="product-image">
+                    🍪
+                </div>
+
+
+                <div class="product-info">
+
+                    <small>Snacks</small>
+
+                    <h3>Chocolate Cookies</h3>
+
+                    <div class="rating">
+                        ⭐⭐⭐⭐☆
+                        <span>(76)</span>
+                    </div>
+
+                    <div class="product-price">
+
+                        <strong>₹75</strong>
+
+                        <del>₹100</del>
+
+                    </div>
+
+                    <button class="cart-button">
+                        + Add to Cart
+                    </button>
+
+                </div>
+
+            </article>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     DEAL BANNER
+===================================================== -->
+
+<section class="deal-section" id="deals">
+
+    <div class="container">
+
+        <div class="deal-banner">
+
+            <div class="deal-content">
+
+                <span>⚡ FLASH DEAL</span>
+
+                <h2>
+                    Get up to
+                    <strong>50% OFF</strong>
+                </h2>
+
+                <p>
+                    On selected groceries, fruits and daily essentials.
+                </p>
+
+                <a href="#products" class="deal-button">
+                    Shop Deals →
+                </a>
+
+            </div>
+
+
+            <div class="deal-products">
+
+                <div class="deal-item">
+                    🍎
+                </div>
+
+                <div class="deal-item">
+                    🥦
+                </div>
+
+                <div class="deal-item">
+                    🥛
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     APP / NEWSLETTER
+===================================================== -->
+
+<section class="newsletter">
+
+    <div class="container newsletter-content">
+
+        <div>
+
+            <span>GET THE BEST DEALS</span>
+
+            <h2>
+                Never miss an offer!
+            </h2>
+
+            <p>
+                Subscribe and get exclusive deals directly in your inbox.
+            </p>
+
+        </div>
+
+
+        <form class="subscribe">
 
             <input
                 type="email"
@@ -389,76 +746,98 @@
                 Subscribe
             </button>
 
-        </div>
+        </form>
 
-    </section>
+    </div>
 
+</section>
 
-    <!-- ================= FOOTER ================= -->
-
-    <footer id="contact">
-
-        <div class="footer-container">
+</main>
 
 
-            <div class="footer-column about">
+<!-- =====================================================
+     FOOTER
+===================================================== -->
 
-                <h2>🛒 SuperMart</h2>
+<footer>
 
-                <p>
-                    Your trusted online supermarket for fresh,
-                    affordable and quality products.
-                </p>
-
-                <div class="social-links">
-                    Facebook &nbsp; Instagram &nbsp; YouTube
-                </div>
-
-            </div>
+    <div class="container footer-grid">
 
 
-            <div class="footer-column">
+        <div class="footer-brand">
 
-                <h3>Quick Links</h3>
+            <a href="#" class="logo">
+                🛒 Fresh<span>Cart</span>
+            </a>
 
-                <a href="#home">Home</a>
-                <a href="#categories">Categories</a>
-                <a href="#products">Products</a>
-                <a href="#offers">Offers</a>
+            <p>
+                Your everyday supermarket, bringing fresh
+                groceries and essentials straight to your door.
+            </p>
 
-            </div>
-
-
-            <div class="footer-column">
-
-                <h3>Customer Service</h3>
-
-                <a href="#">My Account</a>
-                <a href="#">Order Tracking</a>
-                <a href="#">Shipping Info</a>
-                <a href="#">Help Center</a>
-
-            </div>
-
-
-            <div class="footer-column">
-
-                <h3>Contact Us</h3>
-
-                <p>📍 Greater Noida, India</p>
-                <p>📞 +91 98765 43210</p>
-                <p>✉️ support@supermart.com</p>
-
+            <div class="social">
+                <a href="#">f</a>
+                <a href="#">𝕏</a>
+                <a href="#">◎</a>
+                <a href="#">▶</a>
             </div>
 
         </div>
 
 
-        <div class="copyright">
-            © 2026 SuperMart. All Rights Reserved.
+        <div class="footer-column">
+
+            <h3>Shop</h3>
+
+            <a href="#">Fruits & Vegetables</a>
+            <a href="#">Dairy & Eggs</a>
+            <a href="#">Groceries</a>
+            <a href="#">Snacks</a>
+            <a href="#">Beverages</a>
+
         </div>
 
-    </footer>
+
+        <div class="footer-column">
+
+            <h3>Help</h3>
+
+            <a href="#">Contact Us</a>
+            <a href="#">FAQs</a>
+            <a href="#">Delivery Information</a>
+            <a href="#">Returns</a>
+            <a href="#">Track Order</a>
+
+        </div>
+
+
+        <div class="footer-column">
+
+            <h3>Contact</h3>
+
+            <p>📍 Greater Noida, India</p>
+            <p>📞 +91 98765 43210</p>
+            <p>✉️ hello@freshcart.com</p>
+
+        </div>
+
+    </div>
+
+
+    <div class="container copyright">
+
+        <p>
+            © 2026 FreshCart. All Rights Reserved.
+        </p>
+
+        <div>
+            Privacy Policy &nbsp; | &nbsp; Terms & Conditions
+        </div>
+
+    </div>
+
+</footer>
+
 
 </body>
 </html>
